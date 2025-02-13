@@ -19,8 +19,8 @@
             background-color: black;
         }
         video {
-            width: 95vw;
-            height: 95vh;
+            width: 75vw;
+            height: 75vh;
             object-fit: cover;
             border-radius: 10px;
         }
@@ -37,9 +37,9 @@
             let video = document.getElementById('video');
             video.play();
             
-            video.requestFullscreen().catch(err => {
-                console.log("Fullscreen mode not available: ", err);
-            });
+            video.onended = () => {
+                window.location.href = 'surprize.html';
+            };
         });
     </script>
 </body>
