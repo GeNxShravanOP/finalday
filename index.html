@@ -10,13 +10,19 @@
             padding: 0;
             overflow: hidden;
         }
-        video {
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             width: 100vw;
             height: 100vh;
+            background-color: black;
+        }
+        video {
+            width: 95vw;
+            height: 95vh;
             object-fit: cover;
-            position: absolute;
-            top: 0;
-            left: 0;
+            border-radius: 10px;
         }
     </style>
 </head>
